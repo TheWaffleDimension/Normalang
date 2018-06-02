@@ -1,0 +1,54 @@
+Types:
+ - Integer : #
+ - Float   : #
+ - String  : "
+ - Boolean : &
+ - Table   : $
+
+Operations:
+ - (# + #)   = #
+ - (" + ")   = "
+ - (# - #)   = #
+ - (# * #)   = #
+ - (# / #)   = #
+ - (# % #)   = #
+ - (" == ")  = &
+ - (# == #)  = &
+ - ($ == $)  = &
+ - (# != #)  = &
+ - ($ != $)  = &
+ - (# < #)   = &
+ - (# > #)   = &
+ - (# <= #)  = &
+ - (# >= #)  = &
+ - (!&)      = &
+ - (& || &)  = &
+ - (& && &)  = &
+ - (\#$)     = #
+ - ($[#"&$]) = #"&$
+
+Control:
+ - if & {...}
+ - if & {...} else {...}
+ - if & {...} elseif & {...}
+ - while & {...}
+ - for (#, &, #) {...}
+ - repeat {...} until {&}
+ - do {...}
+
+Defining Variables:
+ - (#) = 123
+ - (#) = 1.23
+ - (") = "Abc"
+ - (") = 'Abc'
+ - (&) = true
+ - (&) = false
+ - ($) = {}
+ - ($) = {[#"&$] = #"&$, ...}
+
+In-Built Functions
+input() : returns(") : Returns input from console. Yields program until input is entered.
+print("#&) : returns() : Outputs whatever the value supplied is.
+
+
+
